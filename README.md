@@ -1,5 +1,5 @@
 # Cross-lingual ABSA (XABSA)
-This repo contains the data and code for our paper [Cross-lingual Aspect-based Sentiment Analysis with Aspect Term Code-Switching ](https://aclanthology.org/2021.emnlp-main.727.pdf).
+This repo contains the data and code for our paper [Cross-lingual Aspect-based Sentiment Analysis with Aspect Term Code-Switching ](https://aclanthology.org/2021.emnlp-main.727.pdf) in EMNLP 2021.
 
 
 ## Requirements
@@ -13,7 +13,7 @@ This repo contains the data and code for our paper [Cross-lingual Aspect-based S
 
 ##  Quick Start
 - Download the pre-trained multilingual language model mBERT or XLM-R
-- To quickly reproduce the results with French as the target langauge and mBERT as the backbone under the supervised setting:
+- To quickly reproduce the results with French (`fr`) as the target langauge and mBERT (`mbert`) as the backbone under the supervised setting:
 ```python
 python main.py --tfm_type mbert --tgt_lang fr
 ```
@@ -21,13 +21,15 @@ python main.py --tfm_type mbert --tgt_lang fr
 
 
 ## Usage
-- To run experiments under different settings, change the `exp_type` setting:
+To run experiments under different settings, change the `exp_type` setting:
   * `supervised` refers to the supervised setting
   * `acs` is the proposed method
   * `acs_kd_s/m`: single/multi teacher distillation under the cross-lingual setting
   * `macs_kd`: multilingual distillation
-- `run_absa.sh` provides an example script to run basic experiment.
-- `run_absa_kd.sh` provides an example script to run experiments with knowledge distilling on the unlabeled target laguage data.
+
+Two example scripts:
+- `run_absa.sh` provides an example to run basic experiment.
+- `run_absa_kd.sh` provides an example to run experiments with knowledge distilling on the unlabeled target laguage data.
 
 
 ## Citation

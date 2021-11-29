@@ -17,7 +17,6 @@ python main.py --tfm_type mbert \
             --learning_rate 5e-5 \
             --tagging_schema BIEOS \
             --overwrite_output_dir \
-            --num_train_epochs 10 \
-            --max_steps 2000 \
-            --train_begin_saving_step 1500 \
-            --eval_begin_end 1500-2000 
+            --max_steps 1000 \
+            --train_begin_saving_step 500 \
+            --eval_begin_end 500-1000 

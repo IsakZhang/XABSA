@@ -12,7 +12,7 @@ python main.py --tfm_type mbert \
             --do_train \
             --do_eval \
             --ignore_cached_data \
-            --per_gpu_train_batch_size 25 \
+            --per_gpu_train_batch_size 16 \
             --per_gpu_eval_batch_size 12 \
             --learning_rate 5e-5 \
             --tagging_schema BIEOS \
